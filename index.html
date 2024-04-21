@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    </head>
+    <body>
+        <a-scene background="color:black">
+            <a-sky src="https://static.vecteezy.com/system/resources/previews/000/648/781/large_2x/vector-a-rail-at-desert-scene.jpg"></a-sky>
+            <a-camera wasd-controls-enabled="true" position="0 -20 20"></a-camera>
+            <a-assets>
+                <a-asset-item id="train_obj" src="/Train/tinker.obj"></a-asset-item>
+                <a-asset-item id="train_mtl" src="/Train/obj.mtl"></a-asset-item>
+            </a-assets>
+            <a-entity obj-model="obj:#train_obj ; mtl:#train_mtl" position="0 -20 18" rotation="-90 -360 0"></a-entity>
+        </a-scene>
+    </body>
+</html>
